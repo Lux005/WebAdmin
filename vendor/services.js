@@ -7,7 +7,7 @@
         	}
         	UserInfo.userId =$cookieStore.get('userId');
             if (UserInfo.userId == 'guest') {
-                $window.location.href = '/pages/login.html';
+                $window.location.href = './login.html';
             }
         },
         register: function (data) {

@@ -5,7 +5,7 @@
     $scope.logout = function(){
     	CurrentUser.logout()
         .success(function (data) {
-            $window.location.href = '/pages/login.html';
+            $window.location.href = './login.html';
         });
     	
     }
@@ -248,7 +248,7 @@
         CurrentUser.login($scope.loginData)
         .success(function (data) {
             CurrentUser.setId(data.userId);
-            $window.location.href = 'index.html';
+            $window.location.href = './index.html';
         });
     };
     $scope.userRegister = function () {
@@ -258,7 +258,7 @@
         CurrentUser.register($scope.loginData)
         .success(function (data) {
             CurrentUser.setId(data.userId);
-            $window.location.href = 'login.html';
+            $window.location.href = './login.html';
         });
     };
     
